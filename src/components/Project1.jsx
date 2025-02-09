@@ -5,7 +5,7 @@ export default function Project1() {
       title: "CookiesReplica",
       description: "A replica of the UI Cookies website design",
       url: "https://cookies-replica.vercel.app/",
-      image: "public/website1.png",
+      image: "/website1.png",
     },
     {
       title: "HeptaReplica",
