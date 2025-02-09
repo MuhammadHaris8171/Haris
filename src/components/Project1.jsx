@@ -11,7 +11,7 @@ export default function Project1() {
       title: "HeptaReplica",
       description: "A recreation of the Hepta design system",
       url: "https://hepta-replica.vercel.app/",
-      image: "public/website2.png",
+      image: "/public/website2.png",
     },
     {
       title: "Staging",
