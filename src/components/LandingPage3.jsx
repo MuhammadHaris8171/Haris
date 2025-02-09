@@ -8,7 +8,7 @@ function LandingPage3() {
       <div className="max-w-5xl mx-auto p-4 pt-6 md:p-6 lg:p-8">
         <div className="flex flex-col items-center mb-12">
           <div className="bg-gray-200 border-2 border-dashed rounded-xl w-24 h-24 mb-4 " >
-            <img src="/public/Picsart_24-12-25_15-52-50-334.jpg" alt="" />
+            <img src="public/Picsart_24-12-25_15-52-50-334.jpg" alt="" />
             </div>
           <h1 className="text-3xl font-bold mb-2">Junior/Intermediate MERN Developer</h1>
           <p className="text-lg text-gray-600">Welcome to my portfolio!</p>
