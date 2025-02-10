@@ -5,19 +5,19 @@ export default function Project1() {
       title: "CookiesReplica",
       description: "A replica of the UI Cookies website design",
       url: "https://cookies-replica.vercel.app/",
-      image: "/website1.png",
+      image: "/website1.PNG",
     },
     {
       title: "HeptaReplica",
       description: "A recreation of the Hepta design system",
       url: "https://hepta-replica.vercel.app/",
-      image: "/website2.png",
+      image: "/website2.PNG",
     },
     {
       title: "Staging",
       description: "A staging environment for development",
       url: "https://staging-jet.vercel.app",
-      image: "/website3.png",
+      image: "/website3.PNG",
     },
   ]
 
