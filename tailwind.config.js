@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'DowntoUp': 'DowntoUp 1s linear 1',
+      },
+      
+    },
   },
   plugins: [],
-}
+};

@@ -1,0 +1,106 @@
+.LandingH1{
+animation: lefttoRight 1300ms linear 100ms 1;
+}
+.LandingP1{
+    animation: RighttoLeft 1300ms linear 100ms 1;   
+}
+.Landingdiv1{
+    animation: lefttoRight 1300ms linear 100ms 1;
+}
+.Landingdiv2{
+    animation: RighttoLeft 1300ms linear 100ms 1;  
+}
+.LandingImage1{
+    animation: UptoDown 1300ms linear 100ms 1; 
+}
+.LandingButton1{
+    animation: DowntoUp 1300ms linear 100ms 1; 
+}
+@keyframes lefttoRight {
+    0%{
+        position: relative;
+        left: -100%;
+    }
+    25%{
+        position: relative;
+        left: -75%; 
+    }
+    50%{
+        position: relative;
+        left: -50%; 
+    }
+    75%{
+        position: relative;
+        left: -25%; 
+    }
+    100%{
+        position: relative;
+        left: 0%; 
+    }
+}
+@keyframes RighttoLeft {
+    0%{
+        position: relative;
+        right: -100%;
+    }
+    25%{
+        position: relative;
+        right: -75%; 
+    }
+    50%{
+        position: relative;
+        right: -50%; 
+    }
+    75%{
+        position: relative;
+        right: -25%; 
+    }
+    100%{
+        position: relative;
+        right: 0%; 
+    }
+}
+@keyframes UptoDown {
+    0%{
+        position: relative;
+        top: -100%;
+    }
+    25%{
+        position: relative;
+        top: -75%; 
+    }
+    50%{
+        position: relative;
+        top: -50%; 
+    }
+    75%{
+        position: relative;
+        top: -25%; 
+    }
+    100%{
+        position: relative;
+        top: 0%; 
+    }
+}
+@keyframes DowntoUp {
+    0%{
+        position: relative;
+        bottom: -100%;
+    }
+    25%{
+        position: relative;
+        bottom: -75%; 
+    }
+    50%{
+        position: relative;
+        bottom: -50%; 
+    }
+    75%{
+        position: relative;
+        bottom: -25%; 
+    }
+    100%{
+        position: relative;
+        bottom: 0%; 
+    }
+}
