@@ -1,36 +1,42 @@
-import { useState, lazy, Suspense, useEffect } from 'react'
-import './App.css'
-import LandingPage2 from './components/LandingPage2'
-import LandingPage3 from './components/LandingPage3'
-import LandingPage4 from './components/LandingPage4'
-import LandingPage5 from './components/LandingPage5'
-import LandingPage6 from './components/LandingPage6'
-import Project from './components/Project'
-import Project1 from './components/Project1'
-// import Project3 from './components/Project3'
+import { lazy, Suspense, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
+import './App.css';
+import LandingPage3 from './components/LandingPage3';
+import LandingPage6 from './components/LandingPage6';
+// Lazy load Project1 and LandingPage6
+const LazyProject1 = lazy(() => import('./components/Project1'));
 
 
-function App() {
+function LazyLoadComponent({ Component }) {
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [isVisible, setIsVisible] = useState(false);
+
+  if (inView && !isVisible) {
+    setIsVisible(true);
+  }
 
   return (
-    <>
-
-      <LandingPage3 />
-
-      {/* <LandingPage2 /> */}
-      {/* <LandingPage4 /> */}
-      {/* <LandingPage5 /> */}
-
-      {/* <Project /> */}
-
-      <Project1 />
-
-      {/* <Project3 /> */}
-
-      <LandingPage6 />
-
-    </>
-  )
+    <div ref={ref}>
+      {isVisible ? (
+        <Suspense >
+          <Component />
+        </Suspense>
+      ) : (
+        <div style={{ minHeight: '100vh' }} /> // Placeholder space
+      )}
+    </div>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <>
+      <LandingPage3 />
+
+      <LazyLoadComponent Component={LazyProject1} />
+      <LandingPage6 />
+    </>
+  );
+}
+
+export default App;

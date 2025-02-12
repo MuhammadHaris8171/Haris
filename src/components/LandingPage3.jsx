@@ -11,7 +11,7 @@ function LandingPage3() {
           <div className="bg-gray-200 border-2 border-dashed rounded-xl w-24 h-24 mb-4 LandingImage1" >
             <img src="/Picsart_24-12-25_15-52-50-334.jpg" alt="" />
             </div>
-          <h1 className="text-3xl font-bold mb-2 LandingH1">Junior/Intermediate MERN Developer</h1>
+          <h1 className="text-3xl font-bold mb-2 LandingH1 text-center">Junior/Intermediate MERN Developer</h1>
           <p className="text-lg text-gray-600 LandingP1">Welcome to my portfolio!</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
