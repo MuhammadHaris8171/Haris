@@ -2,10 +2,10 @@ import './Project1.css'
 export default function Project1() {
   const projects = [
     {
-      title: "CookiesReplica",
-      description: "A replica of the UI Cookies website design",
-      url: "https://cookies-replica.vercel.app/",
-      image: "/website1.PNG",
+      title: "Staging",
+      description: "A staging environment for development",
+      url: "https://staging-jet.vercel.app",
+      image: "/website3.PNG",
     },
     {
       title: "HeptaReplica",
@@ -14,10 +14,22 @@ export default function Project1() {
       image: "/website2.PNG",
     },
     {
-      title: "Staging",
-      description: "A staging environment for development",
-      url: "https://staging-jet.vercel.app",
-      image: "/website3.PNG",
+      title: "Prohomez",
+      description: "A sleek, design-focused multi-vendor platform for real estate and home products.",
+      url: "https://prohomez.com/",
+      image: "/website4.PNG",
+    },
+    {
+      title: "Sigma6digital",
+      description: "A platform offering a range of digital and technical services, from marketing to design and web development..",
+      url: "https://sigma6digital.com/",
+      image: "/website5.PNG",
+    },
+    {
+      title: "CookiesReplica",
+      description: "A replica of the UI Cookies website design",
+      url: "https://cookies-replica.vercel.app/",
+      image: "/website1.PNG",
     },
   ]
 

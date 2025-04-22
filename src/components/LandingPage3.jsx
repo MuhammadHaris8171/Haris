@@ -5,7 +5,7 @@ function LandingPage3() {
     const [showModal, setShowModal] = useState(false);
   return (
     <div>
-    <div className="min-h-full bg-gray-200 flex justify-center items-center overflow-hidden">
+    <div className="min-h-full bg-gray-200 flex justify-center items-center overflow-hidden landingmain">
       <div className="max-w-5xl mx-auto p-4 pt-6 md:p-6 lg:p-8">
         <div className="flex flex-col items-center mb-12">
           <div className="bg-gray-200 border-2 border-dashed rounded-xl w-24 h-24 mb-4 LandingImage1" >
@@ -17,7 +17,7 @@ function LandingPage3() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className=" p-4 Landingdiv1">
             <h2 className="text-2xl font-bold mb-2">About Me</h2>
-            <p className="text-lg text-gray-600">I'm a junior/intermediate level MERN developer with a passion for building scalable and efficient web applications. I have experience working with MongoDB, Express, and React, and I'm always looking to improve my skills and learn new technologies.</p>
+            <p className="text-lg text-gray-600">I'm a junior/intermediate level MERN developer with a passion for building scalable and efficient web applications. I have experience working with MongoDB, Express, React and MySQL, and I'm always looking to improve my skills and learn new technologies.</p>
           </div>
           <div className="bg-white p-4 rounded-lg shadow-md Landingdiv2">
             <h2 className="text-2xl font-bold mb-2">My Skills</h2>
@@ -26,6 +26,7 @@ function LandingPage3() {
               <li className="text-lg text-gray-600 mb-2">Express</li>
               <li className="text-lg text-gray-600 mb-2">React</li>
               <li className="text-lg text-gray-600 mb-2">Node.js</li>
+              <li className="text-lg text-gray-600 mb-2">MySQL</li>
             </ul>
           </div>
         </div>
