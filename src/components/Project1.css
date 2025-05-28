@@ -27,24 +27,45 @@
 }
 .projectCardHidden1,.projectCardHidden2,.projectCardHidden3,.projectCardHidden4,.projectCardHidden5{
     opacity: 0;
+    filter: blur(0.2rem);
+    transform: translateX(-100%);
 }
 .projectCardVisisble1{
      opacity: 1;
-    transition: all linear 0.7s;
+    transition: all 1s;
+    filter: blur(0rem);
+    transform: translateX(0%);
 }
 .projectCardVisible2{
     opacity: 1;
-    transition: all linear 0.8s;
+    transition-delay: 200ms;
+    transition: all 1s;
+    filter: blur(0rem);
+    transform: translateX(0%);
 }
 .projectCardVisible3{
  opacity: 1;
-    transition: all linear 0.9s;
+ transition-delay: 400ms;
+    transition: all 1s;
+    filter: blur(0rem);
+    transform: translateX(0%);
 }
 .projectCardVisible4{
      opacity: 1;
-    transition: all linear 1s;
+    transition: all 1s;
+    transition-delay: 600ms;
+    filter: blur(0rem);
+    transform: translateX(0%);
 }
 .projectCardVisible5{
  opacity: 1;
-    transition: all linear 1.1s;
+    transition: all 1s;
+    transition-delay: 800ms;
+    filter: blur(0rem);
+    transform: translateX(0%);
+}
+@media(prefers-reduced-motion) {
+    .projectCardHidden1,.projectCardHidden2,.projectCardHidden3,.projectCardHidden4,.projectCardHidden5{
+        transition: none;
+    }
 }
