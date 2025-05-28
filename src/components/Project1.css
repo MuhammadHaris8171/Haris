@@ -25,3 +25,26 @@
         opacity: 0.8;
     }
 }
+.projectCardHidden1,.projectCardHidden2,.projectCardHidden3,.projectCardHidden4,.projectCardHidden5{
+    opacity: 0;
+}
+.projectCardVisisble1{
+     opacity: 1;
+    transition: all linear 0.7s;
+}
+.projectCardVisible2{
+    opacity: 1;
+    transition: all linear 0.8s;
+}
+.projectCardVisible3{
+ opacity: 1;
+    transition: all linear 0.9s;
+}
+.projectCardVisible4{
+     opacity: 1;
+    transition: all linear 1s;
+}
+.projectCardVisible5{
+ opacity: 1;
+    transition: all linear 1.1s;
+}

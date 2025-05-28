@@ -1,5 +1,27 @@
 import './Project1.css'
+import { useEffect, useRef, useState } from "react";
 export default function Project1() {
+   const [isVisible, setIsVisible] = useState(false);
+  const projectRef = useRef(null);
+   const callbackFunction = (entries) => {
+    const [entry] = entries;
+    setIsVisible(entry.isIntersecting);
+  };
+   useEffect(() => {
+    const observer = new IntersectionObserver(callbackFunction, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.05, // You can tweak this
+    });
+
+    const currentRef = projectRef.current;
+    if (currentRef) observer.observe(currentRef);
+
+    return () => {
+      if (currentRef) observer.unobserve(currentRef);
+    };
+  }, []);
+
   const projects = [
     {
       title: "Staging",
@@ -16,7 +38,7 @@ export default function Project1() {
     {
       title: "Prohomez",
       description: "A sleek, design-focused multi-vendor platform for real estate and home products.",
-      url: "https://prohomez.com/",
+      url: "https://prohome-last-frontend.vercel.app",
       image: "/website4.PNG",
     },
     {
@@ -33,15 +55,18 @@ export default function Project1() {
     },
   ]
 
+
   return (
-    <div className="bg-white min-h-screen p-8 overflow-hidden">
+    <div  className={`bg-white min-h-screen p-8 overflow-hidden projectMain `}>
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">My Projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project) => (
-            <div 
-              key={project.title} 
-              className="bg-white border border-gray-200 rounded-lg overflow-hidden animate-DowntoUp shadow-sm hover:shadow-md transition-shadow"
+          {projects.map((project,index) => (
+            <div               key={project.title} 
+            ref={projectRef} 
+              className={`bg-white border border-gray-200 rounded-lg overflow-hidden  shadow-sm hover:shadow-md transition-shadow ${
+        isVisible ? `projectCardVisible${index + 1}` : `projectCardHidden${index + 1}`
+      }`}
             >
               <div className="aspect-video relative bg-gray-100">
                 <img src={project.image} alt={project.title}  />
