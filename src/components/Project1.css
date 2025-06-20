@@ -35,10 +35,12 @@
     transition: all 1s;
     filter: blur(0rem);
     transform: translateX(0%);
+    transition-delay: 80ms;
 }
 .projectCardVisisble1{
      opacity: 1;
     transition: all 1s;
+    transition-delay: 130ms;
     filter: blur(0rem);
     transform: translateX(0%);
 }
