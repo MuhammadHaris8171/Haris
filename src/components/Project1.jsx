@@ -1,28 +1,23 @@
 import './Project1.css'
 import { useEffect, useRef, useState } from "react";
+
 export default function Project1() {
-   const [isVisible, setIsVisible] = useState(false);
-  const projectRef = useRef(null);
-   const callbackFunction = (entries) => {
-    const [entry] = entries;
-    setIsVisible(entry.isIntersecting);
-  };
-   useEffect(() => {
-    const observer = new IntersectionObserver(callbackFunction, {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.05, // You can tweak this
-    });
-
-    const currentRef = projectRef.current;
-    if (currentRef) observer.observe(currentRef);
-
-    return () => {
-      if (currentRef) observer.unobserve(currentRef);
-    };
-  }, []);
+  const [visibleCards, setVisibleCards] = useState(new Set());
+  const cardRefs = useRef([]);
 
   const projects = [
+    {
+      title: "E-Commerce Store",
+      description: "A staging environment for development",
+      url: "https://digital-ocean-olive.vercel.app",
+      image: "/website6.PNG",
+    },
+    {
+      title: "Staging",
+      description: " Username: admin \n Password: admin123",
+      url: "https://car-finance-frontend.vercel.app",
+      image: "/website7.PNG",
+    },
     {
       title: "Staging",
       description: "A staging environment for development",
@@ -43,7 +38,7 @@ export default function Project1() {
     },
     {
       title: "Sigma6digital",
-      description: "A platform offering a range of digital and technical services, from marketing to design and web development..",
+      description: "A platform offering a range of digital and technical services, from marketing to design and web development.",
       url: "https://sigma6digital.com/",
       image: "/website5.PNG",
     },
@@ -53,29 +48,64 @@ export default function Project1() {
       url: "https://cookies-replica.vercel.app/",
       image: "/website1.PNG",
     },
-  ]
+  ];
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = parseInt(entry.target.dataset.index);
+          setVisibleCards(prev => {
+            const newSet = new Set(prev);
+            if (entry.isIntersecting) {
+              newSet.add(index);
+            } else {
+              newSet.delete(index);
+            }
+            return newSet;
+          });
+        });
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.001,
+      }
+    );
+
+    cardRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => {
+      cardRefs.current.forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+    };
+  }, []);
 
   return (
-    <div  className={`bg-white min-h-screen p-8 overflow-hidden projectMain `}>
+    <div className={`bg-white min-h-screen p-8 overflow-hidden projectMain`}>
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">My Projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project,index) => (
-            <div               key={project.title} 
-            ref={projectRef} 
-              className={`bg-white border border-gray-200 rounded-lg overflow-hidden  shadow-sm hover:shadow-md transition-shadow ${
-        isVisible ? `projectCardVisible${index + 1}` : `projectCardHidden${index + 1}`
-      }`}
+          {projects.map((project, index) => (
+            <div
+              key={`${project.title}-${index}`}
+              ref={(el) => (cardRefs.current[index] = el)}
+              data-index={index}
+              className={`bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow ${
+                visibleCards.has(index) ? `projectCardVisible${index + 1}` : `projectCardHidden${index + 1}`
+              }`}
             >
               <div className="aspect-video relative bg-gray-100">
-                <img src={project.image} alt={project.title}  />
+                <img src={project.image} alt={project.title} />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-600 mb-4 whitespace-pre-line">
                   {project.description}
                 </p>
                 <div className="flex justify-between items-center">
@@ -128,6 +158,5 @@ export default function Project1() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-

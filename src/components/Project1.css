@@ -25,10 +25,16 @@
         opacity: 0.8;
     }
 }
-.projectCardHidden1,.projectCardHidden2,.projectCardHidden3,.projectCardHidden4,.projectCardHidden5{
+.projectCardHidden0,.projectCardHidden1,.projectCardHidden2,.projectCardHidden3,.projectCardHidden4,.projectCardHidden5,.projectCardHidden6,.projectCardHidden7{
     opacity: 0;
     filter: blur(0.2rem);
     transform: translateX(-100%);
+}
+.projectCardVisisble0{
+     opacity: 1;
+    transition: all 1s;
+    filter: blur(0rem);
+    transform: translateX(0%);
 }
 .projectCardVisisble1{
      opacity: 1;
@@ -61,6 +67,20 @@
  opacity: 1;
     transition: all 1s;
     transition-delay: 800ms;
+    filter: blur(0rem);
+    transform: translateX(0%);
+}
+.projectCardVisible6{
+ opacity: 1;
+    transition: all 1s;
+    transition-delay: 1000ms;
+    filter: blur(0rem);
+    transform: translateX(0%);
+}
+.projectCardVisible7{
+ opacity: 1;
+    transition: all 1s;
+    transition-delay: 1200ms;
     filter: blur(0rem);
     transform: translateX(0%);
 }
