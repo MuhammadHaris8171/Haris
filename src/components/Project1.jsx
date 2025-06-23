@@ -7,13 +7,13 @@ export default function Project1() {
 
   const projects = [
     {
-      title: "E-Commerce Store",
+      title: "E-Commerce-Store",
       description: "A staging environment for development",
       url: "https://digital-ocean-olive.vercel.app",
       image: "/website6.PNG",
     },
     {
-      title: "Staging",
+      title: "CarFinanceFrontend",
       description: " Username: admin \n Password: admin123",
       url: "https://car-finance-frontend.vercel.app",
       image: "/website7.PNG",
