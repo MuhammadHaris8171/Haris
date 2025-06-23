@@ -7,46 +7,53 @@ export default function Project1() {
 
   const projects = [
     {
-      title: "E-Commerce-Store",
+      title: "E-Commerce Store",
       description: "A staging environment for development",
       url: "https://digital-ocean-olive.vercel.app",
       image: "/website6.PNG",
+      giturl:"https://github.com/MuhammadHaris8171/e-commerce-store",
     },
     {
-      title: "CarFinanceFrontend",
+      title: "Car Finance",
       description: " Username: admin \n Password: admin123",
       url: "https://car-finance-frontend.vercel.app",
       image: "/website7.PNG",
-    },
-    {
-      title: "Staging",
-      description: "A staging environment for development",
-      url: "https://staging-jet.vercel.app",
-      image: "/website3.PNG",
-    },
-    {
-      title: "HeptaReplica",
-      description: "A recreation of the Hepta design system",
-      url: "https://hepta-replica.vercel.app/",
-      image: "/website2.PNG",
+      giturl:"https://github.com/MuhammadHaris8171/carfinancefrontend",
     },
     {
       title: "Prohomez",
       description: "A sleek, design-focused multi-vendor platform for real estate and home products.",
       url: "https://prohome-last-frontend.vercel.app",
       image: "/website4.PNG",
+      giturl:"https://github.com/MuhammadHaris8171/prohomeLastFrontend",
+    },
+    {
+      title: "Staging",
+      description: "A staging environment for development",
+      url: "https://staging-jet.vercel.app",
+      image: "/website3.PNG",
+      giturl:"https://github.com/MuhammadHaris8171/staging",
+    },
+    {
+      title: "HeptaReplica",
+      description: "A recreation of the Hepta design system",
+      url: "https://hepta-replica.vercel.app/",
+      image: "/website2.PNG",
+      giturl:"https://github.com/MuhammadHaris8171/heptareplica",
     },
     {
       title: "Sigma6digital",
       description: "A platform offering a range of digital and technical services, from marketing to design and web development.",
       url: "https://sigma6digital.com/",
       image: "/website5.PNG",
+      giturl:"https://github.com/MuhammadHaris8171/sigma6digital",
     },
     {
       title: "CookiesReplica",
       description: "A replica of the UI Cookies website design",
       url: "https://cookies-replica.vercel.app/",
       image: "/website1.PNG",
+      giturl:"https://github.com/MuhammadHaris8171/cookiesreplica",
     },
   ];
 
@@ -132,7 +139,7 @@ export default function Project1() {
                     Visit Site
                   </a>
                   <a
-                    href={`https://github.com/MuhammadHaris8171/${project.title.toLowerCase().replace(/\s+/g, '-')}`}
+                    href={project.giturl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-gray-700 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
