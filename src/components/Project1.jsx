@@ -20,13 +20,13 @@ export default function Project1() {
       image: "/website7.PNG",
       giturl:"https://github.com/MuhammadHaris8171/carfinancefrontend",
     },
-    {
-      title: "Prohomez",
-      description: "A sleek, design-focused multi-vendor platform for real estate and home products.",
-      url: "https://prohome-last-frontend.vercel.app",
-      image: "/website4.PNG",
-      giturl:"https://github.com/MuhammadHaris8171/prohomeLastFrontend",
-    },
+    // {
+    //   title: "Prohomez",
+    //   description: "A sleek, design-focused multi-vendor platform for real estate and home products.",
+    //   url: "https://prohome-last-frontend.vercel.app",
+    //   image: "/website4.PNG",
+    //   giturl:"https://github.com/MuhammadHaris8171/prohomeLastFrontend",
+    // },
     {
       title: "Staging",
       description: "A staging environment for development",
