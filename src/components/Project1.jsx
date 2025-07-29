@@ -41,13 +41,13 @@ export default function Project1() {
       image: "/website2.PNG",
       giturl:"https://github.com/MuhammadHaris8171/heptareplica",
     },
-    {
-      title: "Sigma6digital",
-      description: "A platform offering a range of digital and technical services, from marketing to design and web development.",
-      url: "https://sigma6digital.com/",
-      image: "/website5.PNG",
-      giturl:"https://github.com/MuhammadHaris8171/sigma6digital",
-    },
+    // {
+    //   title: "Sigma6digital",
+    //   description: "A platform offering a range of digital and technical services, from marketing to design and web development.",
+    //   url: "https://sigma6digital.com/",
+    //   image: "/website5.PNG",
+    //   giturl:"https://github.com/MuhammadHaris8171/sigma6digital",
+    // },
     {
       title: "CookiesReplica",
       description: "A replica of the UI Cookies website design",
