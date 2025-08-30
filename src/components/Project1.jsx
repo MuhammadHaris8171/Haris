@@ -20,13 +20,21 @@ export default function Project1() {
       image: "/website7.PNG",
       giturl:"https://github.com/MuhammadHaris8171/carfinancefrontend",
     },
-    // {
-    //   title: "Prohomez",
-    //   description: "A sleek, design-focused multi-vendor platform for real estate and home products.",
-    //   url: "https://prohome-last-frontend.vercel.app",
-    //   image: "/website4.PNG",
-    //   giturl:"https://github.com/MuhammadHaris8171/prohomeLastFrontend",
-    // },
+    {
+      title: "Prohomez",
+      description: "A sleek, design-focused multi-vendor platform for real estate and home products.",
+      url: "https://prohomez.com",
+      image: "/website4.PNG",
+      giturl:"https://github.com/MuhammadHaris8171/Real-Home",
+    },
+    {
+      title: "Chrome Window",
+      description: "An Ui like chrome window",
+      url: "https://chrome-window.vercel.app/",
+      image: "/website4.PNG",
+      giturl:"https://github.com/MuhammadHaris8171/Chrome-Window",
+    },
+
     {
       title: "Staging",
       description: "A staging environment for development",
@@ -41,13 +49,13 @@ export default function Project1() {
       image: "/website2.PNG",
       giturl:"https://github.com/MuhammadHaris8171/heptareplica",
     },
-    // {
-    //   title: "Sigma6digital",
-    //   description: "A platform offering a range of digital and technical services, from marketing to design and web development.",
-    //   url: "https://sigma6digital.com/",
-    //   image: "/website5.PNG",
-    //   giturl:"https://github.com/MuhammadHaris8171/sigma6digital",
-    // },
+    {
+      title: "Sigma6digital",
+      description: "A platform offering a range of digital and technical services, from marketing to design and web development.",
+      url: "https://sigma6digital.com/",
+      image: "/website5.PNG",
+      giturl:"https://github.com/MuhammadHaris8171/sigma6digital",
+    },
     {
       title: "CookiesReplica",
       description: "A replica of the UI Cookies website design",
