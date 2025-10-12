@@ -7,20 +7,6 @@ export default function Project1() {
 
   const projects = [
     {
-      title: "E-Commerce Store",
-      description: "A staging environment for development",
-      url: "https://digital-ocean-olive.vercel.app",
-      image: "/website6.PNG",
-      giturl:"https://github.com/MuhammadHaris8171/e-commerce-store",
-    },
-    {
-      title: "Car Finance",
-      description: " Username: admin \n Password: admin123",
-      url: "https://car-finance-frontend.vercel.app",
-      image: "/website7.PNG",
-      giturl:"https://github.com/MuhammadHaris8171/carfinancefrontend",
-    },
-    {
       title: "Prohomez",
       description: "A sleek, design-focused multi-vendor platform for real estate and home products.",
       url: "https://prohomez.com",
@@ -28,10 +14,31 @@ export default function Project1() {
       giturl:"https://github.com/MuhammadHaris8171/Real-Home",
     },
     {
+      title: "E-Commerce Store",
+      description: "GNRControl manages e-commerce operations and inventory.",
+      url: "https://gnrcontrol.com",
+      image: "/website9.PNG",
+      giturl:"https://github.com/MuhammadHaris8171/e-commerce-store",
+    },
+    {
+      title: "Car Finance",
+      description: " CarFinanceZone is a platform for arranging car financing and loan services.",
+      url: "https://carfinancezone.shop",
+      image: "/website7.PNG",
+      giturl:"https://github.com/MuhammadHaris8171/carfinancefrontend",
+    },
+     {
+      title: "Sigma6digital",
+      description: "A platform offering a range of digital and technical services, from marketing to design and web development.",
+      url: "https://sigma6digital.vercel.app/",
+      image: "/website5.PNG",
+      giturl:"https://github.com/MuhammadHaris8171/sigma6digital",
+    },
+    {
       title: "Chrome Window",
       description: "An Ui like chrome window",
       url: "https://chrome-window.vercel.app/",
-      image: "/website4.PNG",
+      image: "/website8.PNG",
       giturl:"https://github.com/MuhammadHaris8171/Chrome-Window",
     },
 
@@ -48,13 +55,6 @@ export default function Project1() {
       url: "https://hepta-replica.vercel.app/",
       image: "/website2.PNG",
       giturl:"https://github.com/MuhammadHaris8171/heptareplica",
-    },
-    {
-      title: "Sigma6digital",
-      description: "A platform offering a range of digital and technical services, from marketing to design and web development.",
-      url: "https://sigma6digital.com/",
-      image: "/website5.PNG",
-      giturl:"https://github.com/MuhammadHaris8171/sigma6digital",
     },
     {
       title: "CookiesReplica",
@@ -103,7 +103,7 @@ export default function Project1() {
     <div className={`bg-white min-h-screen p-8 overflow-hidden projectMain`}>
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">My Projects</h1>
-        <p>Following are the Projects that either i collaborated or completely developed myself</p>
+        {/* <p>Following are the Projects that either i collaborated or completely developed myself</p> */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div
