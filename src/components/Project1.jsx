@@ -18,7 +18,7 @@ export default function Project1() {
       description: "GNRControl manages e-commerce operations and inventory.",
       url: "https://gnrcontrol.com",
       image: "/website9.PNG",
-      giturl:"https://github.com/MuhammadHaris8171/e-commerce-store",
+      giturl:"https://github.com/MuhammadHaris8171/GnrControlOld",
     },
     {
       title: "Car Finance",
@@ -35,13 +35,12 @@ export default function Project1() {
       giturl:"https://github.com/MuhammadHaris8171/sigma6digital",
     },
     {
-      title: "Chrome Window",
-      description: "An Ui like chrome window",
-      url: "https://chrome-window.vercel.app/",
-      image: "/website8.PNG",
-      giturl:"https://github.com/MuhammadHaris8171/Chrome-Window",
+      title: "Thriveon360 Portfolio",
+      description: "Portfolio for Thriveon360 company",
+      url: "https://thriveon360.vercel.app/",
+      image: "/website10.PNG",
+      giturl:"https://github.com/MuhammadHaris8171/Thriveon360",
     },
-
     {
       title: "Staging",
       description: "A staging environment for development",
@@ -55,6 +54,13 @@ export default function Project1() {
       url: "https://hepta-replica.vercel.app/",
       image: "/website2.PNG",
       giturl:"https://github.com/MuhammadHaris8171/heptareplica",
+    },
+    {
+      title: "Chrome Window",
+      description: "An Ui like chrome window",
+      url: "https://chrome-window.vercel.app/",
+      image: "/website8.PNG",
+      giturl:"https://github.com/MuhammadHaris8171/Chrome-Window",
     },
     {
       title: "CookiesReplica",
