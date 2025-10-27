@@ -1,10 +1,11 @@
 import './Project1.css'
 import { useEffect, useRef, useState } from "react";
+import axios from 'axios';
 
 export default function Project1() {
   const [visibleCards, setVisibleCards] = useState(new Set());
   const cardRefs = useRef([]);
-
+  axios.get('https://real-home-rxxf.onrender.com/hii')
   const projects = [
     {
       title: "Prohomez",
