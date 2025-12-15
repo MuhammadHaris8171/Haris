@@ -2,6 +2,13 @@ import './Project1.css'
 import { useEffect, useRef, useState } from "react";
 import axios from 'axios';
 
+
+
+
+// Expose a global helper so your (existing) contact form can call it without imports.
+// Example usage from any script: window.__sendContact({ name: 'Haris', email: 'a@b.com', message: 'hello' })
+
+
 export default function Project1() {
   const [visibleCards, setVisibleCards] = useState(new Set());
   const cardRefs = useRef([]);
@@ -82,7 +89,7 @@ export default function Project1() {
             if (entry.isIntersecting) {
               newSet.add(index);
             } else {
-              newSet.delete(index);
+              // newSet.delete(index);
             }
             return newSet;
           });
